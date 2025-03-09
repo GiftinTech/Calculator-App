@@ -113,10 +113,19 @@ console.log("Operation Array:", operationArr);
 //5. update display
 function updateInput() {
     userInput.value = operationArr.join(" ") + (currentInput ? " " + currentInput : "")
+
+    
+// Remove blinking placeholder if input
+
+const placeholderText = document.querySelector('.placeholder-text');
+if (placeholderText) {
+    if (operationArr.length === 0 && currentInput === "") {
+        placeholderText.style.display = 'block'
+    } else {
+        placeholderText.style.display = 'none'
+    }
+    }
 }
 
-// Blinking placeholder
-/* const blinkText = document.querySelector('input::placeholder')
-setInterval(() => {
-    blinkText.style.visibility = blinkText.style.visibility === hidden ? 'visible' : 'hidden'
-}, 500) */
+
+   

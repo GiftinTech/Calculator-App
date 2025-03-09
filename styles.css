@@ -42,7 +42,7 @@ body {
     margin: 90px auto 0;
     width: 95%;
     height: 60px;
-    padding: 1.5rem 0 1.5rem;
+    padding: 1.5rem 10px 1.5rem 0;
     pointer-events: none;
     font-size: 38px;
     letter-spacing: 2px;
